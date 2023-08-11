@@ -3,6 +3,8 @@ import Root from "../component/Root"
 import Home from "../pages/Home"
 import TvDetail from "../pages/TvDetail";
 import Search from '../pages/Search'
+import TvShows from "../pages/TvShows";
+import Error from "../component/Error"
 
 
 
@@ -11,6 +13,7 @@ export default function Routes() {
     {
       path: '/',
       element: <Root/>,
+      errorElement: <Error/>,
       children:[
         {
           path:'/',
@@ -21,9 +24,13 @@ export default function Routes() {
           element: <TvDetail />
         },
         {
+          path: 'TvShows',
+          element: <TvShows/>
+        },
+        {
           path: 'search',
           element: <Search/>
-        }
+        },
       ]
     },
   ])

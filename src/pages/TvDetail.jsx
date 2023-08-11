@@ -65,9 +65,7 @@ export default function TvDetail() {
                 <span className="fs-4 fw-bold textColor">Storyline</span>
               </div>
 
-              <span className="textColor fs-5">
-                Premiered Date: {data.premiered}
-              </span>
+              <span className="textColor fs-5">{data.premiered}</span>
             </div>
             <hr className="textColor" />
             <p
